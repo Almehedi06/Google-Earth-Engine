@@ -1,6 +1,16 @@
 # Google-Earth-Engine
 
-This repository contains **Google Earth Engine (GEE)** scripts for **flood mapping** and **land cover classification**. The scripts use satellite data from **Sentinel** and **Landsat** for environmental monitoring and provide powerful tools to analyze geospatial data for environmental research.
+![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) 
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Repo Size](https://img.shields.io/github/repo-size/yourusername/Google-Earth-Engine)
+![Issues](https://img.shields.io/github/issues/yourusername/Google-Earth-Engine)
+![Forks](https://img.shields.io/github/forks/yourusername/Google-Earth-Engine?style=social)
+![Stars](https://img.shields.io/github/stars/yourusername/Google-Earth-Engine?style=social)
+
+A collection of Google Earth Engine (GEE) scripts for flood mapping and land cover classification using satellite data from Sentinel and Landsat.
+
+---
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -47,3 +57,4 @@ The following technologies and tools are used in this project:
    Open your terminal or command prompt and use the following command to clone the repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/Google-Earth-Engine.git
+
