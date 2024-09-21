@@ -1,7 +1,10 @@
 # Google-Earth-Engine
 
-![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg) 
+![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
+![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Enabled-green)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Enabled-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Repo Size](https://img.shields.io/github/repo-size/yourusername/Google-Earth-Engine)
 ![Issues](https://img.shields.io/github/issues/yourusername/Google-Earth-Engine)
@@ -39,6 +42,8 @@ Scripts in this repository are designed to help researchers and data scientists 
 The following technologies and tools are used in this project:
 - **Google Earth Engine**: Cloud-based platform for planetary-scale environmental data analysis.
 - **JavaScript**: For GEE script writing and execution.
+- **Python**: For post-processing and integration with machine learning models.
+- **Machine Learning**: Applied for land cover classification and environmental analysis using GEE and Python.
 - **Sentinel-1/2 & Landsat-8**: Satellite data sources used for flood mapping and land cover analysis.
 
 ---
@@ -54,7 +59,5 @@ The following technologies and tools are used in this project:
 ## Installation
 
 1. **Clone the repository**:
-   Open your terminal or command prompt and use the following command to clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/Google-Earth-Engine.git
-
+```bash
+git clone https://github.com/yourusername/Google-Earth-Engine.git
