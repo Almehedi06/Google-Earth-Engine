@@ -6,7 +6,6 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Enabled-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Issues](https://img.shields.io/github/issues/yourusername/Google-Earth-Engine)
-![Forks](https://img.shields.io/github/forks/yourusername/Google-Earth-Engine?style=social)
 
 A collection of Google Earth Engine (GEE) **JavaScript** scripts for **flood mapping** and **land cover classification** using satellite data from Sentinel-1, Sentinel-2, and Landsat.
 
