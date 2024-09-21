@@ -13,9 +13,11 @@ A collection of Google Earth Engine (GEE) **JavaScript** scripts for **flood map
 
 ### Connect with Me:
 
-[![Twitter Badge](https://img.shields.io/badge/Twitter-@yourusername-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-@yourusername-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourusername)
-[![Personal Website](https://img.shields.io/badge/Website-yourwebsite-blue?style=flat&logo=google-chrome)](https://yourwebsite.com)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-@AlMehedi06-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://x.com/AlMehedi06)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Md--Abdullah--Al--Mehedi-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/md-abdullah-al-mehedi/)
+[![ResearchGate Badge](https://img.shields.io/badge/ResearchGate-Md--Abdullah--Al--Mehedi-brightgreen?style=flat&logo=researchgate)](https://www.researchgate.net/profile/Md-Abdullah-Al-Mehedi)
+[![Personal Website](https://img.shields.io/badge/Website-Abdullah--Al--Mehedi-blue?style=flat&logo=google-chrome)](https://almehedi06.wixsite.com/abdullah-al-mehedi)
+[![Google Scholar Badge](https://img.shields.io/badge/Google%20Scholar-Citations-blue?style=flat&logo=google-scholar)](https://scholar.google.com/citations?user=4DR2F4kAAAAJ&hl=en)
 
 ---
 
