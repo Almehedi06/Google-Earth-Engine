@@ -11,6 +11,16 @@ A collection of Google Earth Engine (GEE) **JavaScript** scripts for **flood map
 
 ---
 
+### Connect with Me:
+
+[![Twitter Badge](https://img.shields.io/badge/Twitter-@yourusername-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-@yourusername-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourusername)
+[![Personal Website](https://img.shields.io/badge/Website-yourwebsite-blue?style=flat&logo=google-chrome)](https://yourwebsite.com)
+
+---
+
+---
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Technologies](#technologies)
