@@ -6,7 +6,6 @@
 ![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Enabled-green)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Enabled-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Repo Size](https://img.shields.io/github/repo-size/yourusername/Google-Earth-Engine)
 ![Issues](https://img.shields.io/github/issues/yourusername/Google-Earth-Engine)
 ![Forks](https://img.shields.io/github/forks/yourusername/Google-Earth-Engine?style=social)
 ![Stars](https://img.shields.io/github/stars/yourusername/Google-Earth-Engine?style=social)
