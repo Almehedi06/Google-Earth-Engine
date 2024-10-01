@@ -1,4 +1,4 @@
-# Flood Mapping using Normalized Flood Index and Machine Learning
+# Flood Mapping using Change Detection and Machine Learning Methods
 
 This directory contains scripts and resources for **flood mapping** using the **Normalized Flood Index (NFI)**, satellite data processed in **Google Earth Engine (GEE)**, and a **Random Forest** machine learning model. The primary goal is to detect and map flood-affected regions and refine predictions using a trained machine learning model.
 
