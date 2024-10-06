@@ -15,18 +15,19 @@ var gsw = ee.Image("JRC/GSW1_2/GlobalSurfaceWater"),
           [90.6194149715871, 24.007783376349952]]], null, false),
     valid = ee.FeatureCollection("projects/ee-almehedi06/assets/Flooded2");
     
+
+
 //=====================
 // Dates and Data Collection
 //=====================
 
-var floodStart = '2020-07-16';
-var floodEnd = '2020-08-03';
+var duringStart = '2020-07-16';
+var duringEnd = '2020-08-03';
 var dryStart = '2021-01-01';
 var dryEnd = '2021-02-15';
 
 Map.addLayer(valid, {color: 'grey'}, 'Val flooded locations');
 
-// Sentinel-1 Collection
 var collection = ee.ImageCollection('COPERNICUS/S1_GRD')
   .filter(ee.Filter.eq('instrumentMode', 'IW'))
   .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VH'))
@@ -35,29 +36,29 @@ var collection = ee.ImageCollection('COPERNICUS/S1_GRD')
   .filterBounds(geometry)
   .select('VV');
 
-var floodCollection = collection.filterDate(floodStart, floodEnd);
+var duringCollection = collection.filterDate(duringStart, duringEnd);
 var dryCollection = collection.filterDate(dryStart, dryEnd);
 
-var flood = floodCollection.mosaic().clip(geometry);
+var during = duringCollection.mosaic().clip(geometry);
 var dry = dryCollection.mosaic().clip(geometry);
 
-Map.addLayer(flood, {min: -25, max: 0}, 'during Floods', false);
+Map.addLayer(during, {min: -25, max: 0}, 'during Floods', false);
 Map.addLayer(dry, {min: -25, max: 0}, 'dry Floods', false);
 
-var floodFiltered = ee.Image(toDB(RefinedLee(toNatural(flood))));
+var duringFiltered = ee.Image(toDB(RefinedLee(toNatural(during))));
 var dryFiltered = ee.Image(toDB(RefinedLee(toNatural(dry))));
 
-Map.addLayer(floodFiltered, {min: -25, max: 0}, 'during Filtered', false);
+Map.addLayer(duringFiltered, {min: -25, max: 0}, 'during Filtered', false);
 Map.addLayer(dryFiltered, {min: -25, max: 0}, 'dry Filtered', false);
 
-var division = floodFiltered.divide(dryFiltered);
+var difference = during.divide(dry);
 
 //=====================
 // Flood Detection
 //=====================
 
-var divThreshold = 1.48;
-var flooded = division.gt(divThreshold).rename('water').selfMask();
+var diffThreshold = 1.48;
+var flooded = difference.gt(diffThreshold).rename('water').selfMask();
 Map.addLayer(flooded, {min: 0, max: 1, palette: ['orange']}, 'Initial Flood Area', false);
 
 // Mask out area with permanent/semi-permanent water
@@ -106,7 +107,8 @@ function toDB(img) {
 }
 
 function RefinedLee(img) {
-  // img must be in natural units, i.e., not in dB
+  // img must be in natural units, not dB
+  
   var weights3 = ee.List.repeat(ee.List.repeat(1, 3), 3);
   var kernel3 = ee.Kernel.fixed(3, 3, weights3, 1, 1, false);
 
@@ -144,6 +146,7 @@ function RefinedLee(img) {
   directions = directions.addBands(directions.select(3).not().multiply(8));
 
   directions = directions.updateMask(gradmask);
+
   directions = directions.reduce(ee.Reducer.sum());
 
   var sample_stats = sample_var.divide(sample_mean.multiply(sample_mean));
